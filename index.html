@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="ad.size" content="width=320, height=480">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link type="text/css" rel="stylesheet" href="scripts/css/style.css">
+
+    <script type="text/javascript" src="scripts/js/pixi/pixi.min.js"></script>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        let type = "WebGL"
+        if (!PIXI.utils.isWebGLSupported()) {
+            type = "canvas"
+        }
+
+        PIXI.utils.sayHello(type)
+    </script>
+
+    <script type="text/javascript" src="scripts/ts/additional/Utilities.js"></script>
+    <script type="text/javascript" src="scripts/ts/additional/Texture.js"></script>
+    <script type="text/javascript" src="scripts/ts/additional/Focus.js"></script>
+    <script type="text/javascript" src="scripts/ts/additional/Transform.js"></script>
+    <script type="text/javascript" src="scripts/ts/additional/Resize.js"></script>
+
+    <script type="text/javascript" src="scripts/ts/field/Cell.js"></script>
+    <script type="text/javascript" src="scripts/ts/field/Grid.js"></script>
+
+    <script type="text/javascript" src="scripts/ts/ui/Counter.js"></script>
+    <script type="text/javascript" src="scripts/ts/ui/Pause.js"></script>
+    <script type="text/javascript" src="scripts/ts/ui/PauseMenu.js"></script>
+    <script type="text/javascript" src="scripts/ts/ui/StartMenu.js"></script>
+
+    <script type="text/javascript" src="scripts/ts/App.js"></script>
+    <script type="text/javascript" src="scripts/ts/main.js"></script>
+</body>
+
+</html>
